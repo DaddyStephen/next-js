@@ -12,23 +12,23 @@ interface Data {
 
 export const data: Data[] = [
   {
-    title: 'Easy Accessable',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    title: 'Easy To Join',
+    description: 'Simple partnership process for easy joining in our company.',
     icon: <ArtTrackIcon />,
   },
   {
     title: 'More Affordable Cost',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    description: 'Affordable homes for sale to help people achieve homeownership dreams.',
     icon: <AttachMoneyIcon />,
   },
   {
-    title: 'Flexible Study Time',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    title: 'Flexible Time Strategies',
+    description: 'Implementing flexible work schedules can increase profit in a company.',
     icon: <LocalLibraryIcon />,
   },
   {
-    title: 'Consultation With Mentor',
-    description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
+    title: 'Consultation With Experts',
+    description: 'Get professional advice from industry specialists to improve decision-making.',
     icon: <ContactSupportIcon />,
   },
 ]

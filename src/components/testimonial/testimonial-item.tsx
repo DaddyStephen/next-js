@@ -10,14 +10,14 @@ interface Props {
 
 const TestimonialItem: FC<Props> = ({ item }) => {
   return (
-    <Box sx={{ padding: '30px' }}>
+    <Box sx={{ padding: '30px', borderRadius: '10px' }}>
       <Box sx={{ mb: 2 }}>
         <Typography component="h2" variant="h4" sx={{ mb: 2 }}>
           {item.title}
         </Typography>
         <Typography sx={{ mb: 2, color: 'text.secondary' }}>{item.content}</Typography>
       </Box>
-      <Box
+      {/* <Box
         sx={{
           boxShadow: 1,
           borderRadius: 1,
@@ -57,7 +57,7 @@ const TestimonialItem: FC<Props> = ({ item }) => {
             {item.user.professional}
           </Typography>
         </Box>
-      </Box>
+      </Box> */}
     </Box>
   )
 }

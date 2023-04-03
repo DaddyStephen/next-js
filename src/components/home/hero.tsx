@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography'
 import { Link as ScrollLink } from 'react-scroll'
 import { StyledButton } from '@/components/styled-button'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow'
+import { rgbToHex } from '@mui/material'
 
 interface Exp {
   label: string
@@ -18,15 +19,15 @@ interface ExpItemProps {
 
 const exps: Array<Exp> = [
   {
-    label: 'Students',
-    value: '10K+',
+    label: 'Customers',
+    value: '300+',
   },
   {
-    label: 'Quality Course',
+    label: 'Experts',
     value: '20+',
   },
   {
-    label: 'Experience Mentors',
+    label: 'Projects',
     value: '10+',
   },
 ]
@@ -49,7 +50,7 @@ const ExpItem: FC<ExpItemProps> = ({ item }) => {
 
 const HomeHero: FC = () => {
   return (
-    <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 4, pb: { xs: 8, md: 10 } }}>
+    <Box id="hero" sx={{ backgroundColor: '#ffffff', position: 'relative', pt: 4, pb: { xs: 8, md: 10 } }}>
       <Container maxWidth="lg">
         <Grid container spacing={0} sx={{ flexDirection: { xs: 'column', md: 'unset' } }}>
           <Grid item xs={12} md={7}>
@@ -113,7 +114,7 @@ const HomeHero: FC = () => {
                       },
                     }}
                   >
-                    Skill
+                    Wealth
                     <svg version="1.1" viewBox="0 0 3183 3072">
                       <g id="Layer_x0020_1">
                         <path
@@ -138,11 +139,11 @@ const HomeHero: FC = () => {
               <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
                 <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
                   {
-                    "Let's take an online course to improve your skills in a different way, you can set your own study time according to your learning speed. So you san study comfortable and absorb tge material easily."
+                    "Successkiass Real Estate Company is a reputable real estate investment company that offers great opportunities for investors to earn good dividends and profits. With a team of experienced professionals and a proven track record, the company has consistently delivered excellent returns to its investors. The company's focus on strategic investments in high-growth areas, combined with its expertise in property management and asset optimization, ensures that investors can benefit from long-term appreciation and income. Overall, investing in Successkiass Real Estate Company can be a smart move for those looking to diversify their portfolio and achieve solid returns in the real estate sector."
                   }
                 </Typography>
               </Box>
-              <Box sx={{ '& button': { mr: 2 } }}>
+              {/* <Box sx={{ '& button': { mr: 2 } }}>
                 <ScrollLink to="popular-course" spy={true} smooth={true} offset={0} duration={350}>
                   <StyledButton color="primary" size="large" variant="contained">
                     Get Started
@@ -153,12 +154,12 @@ const HomeHero: FC = () => {
                     Watch Video
                   </StyledButton>
                 </ScrollLink>
-              </Box>
+              </Box> */}
             </Box>
           </Grid>
-          <Grid item xs={12} md={5} sx={{ position: 'relative' }}>
+          <Grid item xs={12} md={5} sx={{ position: 'relative', display: 'flex' }}>
             {/* Sertificate badge */}
-            <Box
+            {/* <Box
               sx={{
                 position: 'absolute',
                 bottom: 30,
@@ -200,15 +201,21 @@ const HomeHero: FC = () => {
                   There are certificates for all courses.
                 </Typography>
               </Box>
-            </Box>
-            <Box sx={{ lineHeight: 0 }}>
-              <Image src="/images/home-hero.jpg" width={775} height={787} alt="Hero img" />
+            </Box> */}
+            <Box sx={{ lineHeight: 0, display: 'flex' }}>
+              <Image
+                style={{ color: 'red', mixBlendMode: 'multiply', alignItems: 'revert' }}
+                src="/images/homehero1.jpg"
+                width={825}
+                height={787}
+                alt="Hero img"
+              />
             </Box>
           </Grid>
         </Grid>
 
         {/* Experience */}
-        <Box sx={{ boxShadow: 2, py: 4, px: 7, borderRadius: 4 }}>
+        <Box sx={{ mt: '10px', backgroundColor: '#212121', boxShadow: 2, py: 4, px: 7, borderRadius: 4 }}>
           <Grid container spacing={2}>
             {exps.map((item) => (
               <Grid key={item.value} item xs={12} md={4}>

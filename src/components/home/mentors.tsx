@@ -22,7 +22,7 @@ const SliderArrow: FC<SliderArrowArrow> = (props) => {
   return (
     <IconButton
       sx={{
-        backgroundColor: 'background.paper',
+        backgroundColor: 'silver',
         color: 'primary.main',
         '&:hover': { backgroundColor: 'primary.main', color: 'primary.contrastText' },
         bottom: '-28px !important',
@@ -41,21 +41,21 @@ const SliderArrow: FC<SliderArrowArrow> = (props) => {
   )
 }
 
-const StyledDots = styled('ul')(({ theme }) => ({
-  '&.slick-dots': {
-    position: 'absolute',
-    left: 0,
-    bottom: -20,
-    paddingLeft: theme.spacing(1),
-    textAlign: 'left',
-    '& li': {
-      marginRight: theme.spacing(2),
-      '&.slick-active>div': {
-        backgroundColor: theme.palette.primary.main,
-      },
-    },
-  },
-}))
+// const StyledDots = styled('ul')(({ theme }) => ({
+//   '&.slick-dots': {
+//     position: 'absolute',
+//     left: 0,
+//     bottom: -20,
+//     paddingLeft: theme.spacing(1),
+//     textAlign: 'left',
+//     '& li': {
+//       marginRight: theme.spacing(2),
+//       '&.slick-active>div': {
+//         backgroundColor: theme.palette.primary.main,
+//       },
+//     },
+//   },
+// }))
 
 const HomeOurMentors: FC = () => {
   const { breakpoints } = useTheme()
@@ -67,13 +67,13 @@ const HomeOurMentors: FC = () => {
     speed: 300,
     slidesToShow: matchMobileView ? 1 : 3,
     slidesToScroll: 1,
-    prevArrow: <SliderArrow type="prev" />,
-    nextArrow: <SliderArrow type="next" />,
-    dots: true,
-    appendDots: (dots) => <StyledDots>{dots}</StyledDots>,
-    customPaging: () => (
-      <Box sx={{ height: 8, width: 30, backgroundColor: 'divider', display: 'inline-block', borderRadius: 4 }} />
-    ),
+    // prevArrow: <SliderArrow type="prev" />,
+    // nextArrow: <SliderArrow type="next" />,
+    // dots: true,
+    // appendDots: (dots) => <StyledDots>{dots}</StyledDots>,
+    // customPaging: () => (
+    //   <Box sx={{ height: 8, width: 30, backgroundColor: 'silver', display: 'inline-block', borderRadius: 4 }} />
+    // ),
   }
 
   return (
@@ -88,19 +88,21 @@ const HomeOurMentors: FC = () => {
           xs: 8,
           md: 12,
         },
-        backgroundColor: '#ecf3f3',
+        backgroundColor: '#000000',
       }}
     >
       <Container maxWidth="lg">
-        <Typography variant="h1" sx={{ fontSize: 40 }}>
-          Our Expert Mentors
+        <Typography variant="h1" sx={{ color: 'gold', fontSize: 40 }}>
+          Our Expert Team Members
         </Typography>
 
-        <Slider {...sliderConfig}>
+        {/* <Slider {...sliderConfig}> */}
+        <Container style={{ display: 'flex', alignItems: 'center', alignContent: 'center' }}>
           {data.map((item) => (
             <MentorCardItem key={String(item.id)} item={item} />
           ))}
-        </Slider>
+        </Container>
+        {/* </Slider> */}
       </Container>
     </Box>
   )

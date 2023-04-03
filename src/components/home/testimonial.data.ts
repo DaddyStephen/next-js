@@ -3,9 +3,9 @@ import type { Testimonial } from '@/interfaces/testimonial'
 export const data: Array<Testimonial> = [
   {
     id: 1,
-    title: 'Detailed learning materials',
+    title: 'Communication & responsiveness',
     content:
-      'Classes that provide very detailed material in term of making UI UX Design starting team making low and hight quality, system designs, using data layout and make prototypes and testing.',
+      'Our real estate company prioritizes effective communication and prompt responsiveness to our clients needs. We strive to keep our clients informed at every step of the process and are readily available to answer any questions or concerns they may have.',
     user: {
       id: 1,
       name: 'Luis Sera',
@@ -15,9 +15,9 @@ export const data: Array<Testimonial> = [
   },
   {
     id: 2,
-    title: 'Best Quality Online Course!',
+    title: 'Buying Strategies',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'We help clients make informed decisions about their property investments. It involves a detailed analysis of market trends, property values, and financing options to identify the best opportunities for buyers to achieve their desired goals.',
     user: {
       id: 1,
       name: 'Riski',
@@ -27,38 +27,14 @@ export const data: Array<Testimonial> = [
   },
   {
     id: 3,
-    title: 'Very complete class',
+    title: 'Market Ready & Destined to Sell',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Market Ready & Destined to Sell are two key features that every real estate company should strive to offer. By ensuring that a property is market-ready and destined to sell, clients can feel confident that their investment will be both attractive to potential buyers and sold quickly for the best possible price.',
     user: {
       id: 1,
       name: 'Nguyễn Văn',
       professional: 'FullStack Designer',
       photo: '3.jpg',
-    },
-  },
-  {
-    id: 4,
-    title: 'Great Quality!',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    user: {
-      id: 1,
-      name: 'Diana Jordan',
-      professional: 'SEO Expert',
-      photo: '4.jpg',
-    },
-  },
-  {
-    id: 5,
-    title: 'Detailed learning materials',
-    content:
-      'Classes that provide very detailed material in term of making UI UX Design starting team making low and hight quality, system designs, using data layout and make prototypes and testing.',
-    user: {
-      id: 1,
-      name: 'Ashley Graham',
-      professional: 'Back-End Developer',
-      photo: '5.jpg',
     },
   },
 ]

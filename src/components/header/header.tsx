@@ -14,13 +14,13 @@ const Header: FC = () => {
   const matchMobileView = useMediaQuery(breakpoints.down('md'))
 
   return (
-    <Box sx={{ backgroundColor: 'background.paper' }}>
+    <Box sx={{ backgroundColor: '#000000' }}>
       <Container sx={{ py: { xs: 2, md: 3 } }}>
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Logo />
           <Box sx={{ ml: 'auto', display: { xs: 'inline-flex', md: 'none' } }}>
             <IconButton onClick={() => setVisibleMenu(!visibleMenu)}>
-              <Menu />
+              <Menu style={{ color: 'gold' }} />
             </IconButton>
           </Box>
           <Box
@@ -34,7 +34,7 @@ const Header: FC = () => {
               transition: (theme) => theme.transitions.create(['top']),
               ...(matchMobileView && {
                 py: 6,
-                backgroundColor: 'background.paper',
+                backgroundColor: '#000000',
                 zIndex: 'appBar',
                 position: 'fixed',
                 height: { xs: '100vh', md: 'auto' },
@@ -45,7 +45,7 @@ const Header: FC = () => {
           >
             <Box /> {/* Magic space */}
             <Navigation />
-            <AuthNavigation />
+            {/* <AuthNavigation /> */}
             {visibleMenu && matchMobileView && (
               <IconButton
                 sx={{
@@ -55,7 +55,7 @@ const Header: FC = () => {
                 }}
                 onClick={() => setVisibleMenu(!visibleMenu)}
               >
-                <Close />
+                <Close style={{ color: 'gold' }} />
               </IconButton>
             )}
           </Box>

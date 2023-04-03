@@ -27,7 +27,7 @@ const SliderArrow: FC<SliderArrowArrow> = (props) => {
         backgroundColor: 'background.paper',
         color: 'primary.main',
         '&:hover': { backgroundColor: 'primary.main', color: 'primary.contrastText' },
-        bottom: { xs: '-28px !important', md: '64px !important' },
+        bottom: { xs: '-10px !important', md: '10px !important' },
         left: 'unset !important',
         right: type === 'prev' ? '90px !important' : '30px !important',
         zIndex: 10,
@@ -63,7 +63,7 @@ const HomeTestimonial: FC = () => {
   }
 
   return (
-    <Box id="testimonial" sx={{ pb: { xs: 6, md: 10 }, backgroundColor: 'background.paper' }}>
+    <Box id="testimonial" sx={{ pb: { xs: 6, md: 10 }, backgroundColor: '#ffffff' }}>
       <Container>
         <Grid container spacing={5}>
           <Grid item xs={12} md={6}>
@@ -78,7 +78,7 @@ const HomeTestimonial: FC = () => {
                 fontWeight: 'bold',
               }}
             >
-              Testimonial What our{' '}
+              What Makes Us <br />
               <Typography
                 component="mark"
                 sx={{
@@ -89,7 +89,7 @@ const HomeTestimonial: FC = () => {
                   backgroundColor: 'unset',
                 }}
               >
-                Students{' '}
+                The Best{' '}
                 <Box
                   sx={{
                     position: 'absolute',
@@ -102,7 +102,7 @@ const HomeTestimonial: FC = () => {
                   <img src="/images/headline-curve.svg" alt="Headline curve" />
                 </Box>
               </Typography>
-              Say
+              Choice
             </Typography>
 
             <StyledSlickContainer>

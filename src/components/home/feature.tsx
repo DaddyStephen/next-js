@@ -37,13 +37,13 @@ const BorderLinearProgress = styled(LinearProgress, {
 
 const HomeFeature: FC = () => {
   return (
-    <Box id="feature" sx={{ py: { xs: 10, md: 14 }, backgroundColor: 'background.paper' }}>
+    <Box id="feature" sx={{ py: { xs: 10, md: 14 }, backgroundColor: '#ffffff' }}>
       <Container>
         <Grid container spacing={3}>
           <Grid item xs={12} md={5}>
             <Box sx={{ position: 'relative' }}>
               <Image src="/images/home-feature.png" width={650} height={678} quality={97} alt="Feature img" />
-              <Box
+              {/* <Box
                 sx={{
                   position: 'absolute',
                   top: -36,
@@ -137,7 +137,7 @@ const HomeFeature: FC = () => {
                     />
                   </Box>
                 </Box>
-              </Box>
+              </Box> */}
             </Box>
           </Grid>
           <Grid item xs={12} md={7}>
@@ -164,7 +164,7 @@ const HomeFeature: FC = () => {
                   backgroundColor: 'unset',
                 }}
               >
-                Learning <br />
+                Money <br />
                 <Box
                   sx={{
                     position: 'absolute',
@@ -178,18 +178,28 @@ const HomeFeature: FC = () => {
                   <img src="/images/headline-curve.svg" alt="Headline curve" />
                 </Box>
               </Typography>
-              Enjoyable
+              Work for you
             </Typography>
 
             <Typography sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
-              Set the way of learning according to your wishes with some of the benefits that you get us, so you on
-              enjoy the lessons that we provide.
+              Investing in a company can be a way to make money work for you. By choosing the right company and
+              understanding its potential, you can reap the benefits of your investment.
             </Typography>
 
             <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>
               {data.map(({ title, description, icon }, index) => (
                 <Grid key={String(index)} item xs={12} md={6}>
-                  <Box sx={{ px: 2, py: 1.5, boxShadow: 1, borderRadius: 4, display: 'flex', alignItems: 'center' }}>
+                  <Box
+                    sx={{
+                      background: '-webkit-linear-gradient(45deg, #085078 10%, #85d8ce 90%)',
+                      px: 2,
+                      py: 1.5,
+                      boxShadow: 1,
+                      borderRadius: 4,
+                      display: 'flex',
+                      alignItems: 'center',
+                    }}
+                  >
                     <Box
                       sx={{
                         mr: 1,
@@ -209,10 +219,10 @@ const HomeFeature: FC = () => {
                       {icon}
                     </Box>
                     <Box sx={{ display: 'flex', flex: 1, flexDirection: 'column' }}>
-                      <Typography variant="h6" sx={{ fontSize: '1rem', mb: 1, color: 'secondary.main' }}>
+                      <Typography variant="h6" sx={{ fontSize: '1rem', mb: 1, color: 'gold' }}>
                         {title}
                       </Typography>
-                      <Typography sx={{ lineHeight: 1.3, color: 'text.secondary' }} variant="subtitle1">
+                      <Typography sx={{ lineHeight: 1.3, color: 'black' }} variant="subtitle1">
                         {description}
                       </Typography>
                     </Box>
